@@ -8,8 +8,9 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: Arial, "Microsoft YaHei", sans-serif;
       background: #f8fafc;
+      color: #0f172a;
     }
 
     .hero {
@@ -24,114 +25,195 @@
       margin-bottom: 20px;
     }
 
+    h2 {
+      font-size: 32px;
+      margin-bottom: 25px;
+    }
+
+    h3 {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
     .btn {
       display: inline-block;
-      padding: 12px 20px;
-      border-radius: 10px;
+      padding: 12px 22px;
+      border-radius: 12px;
       margin: 10px;
       font-weight: bold;
       text-decoration: none;
     }
 
-    .btn1 { background: white; color: black; }
-    .btn2 { border: 1px solid white; color: white; }
+    .btn1 {
+      background: white;
+      color: black;
+    }
+
+    .btn2 {
+      border: 1px solid white;
+      color: white;
+    }
 
     .section {
-      padding: 50px 20px;
+      padding: 55px 20px;
       text-align: center;
     }
 
     .card {
       background: white;
-      padding: 20px;
-      margin: 10px;
-      border-radius: 15px;
+      padding: 24px;
+      margin: 12px;
+      border-radius: 18px;
       display: inline-block;
-      width: 260px;
+      width: 280px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+      vertical-align: top;
     }
 
     .courses span {
       display: inline-block;
       margin: 8px;
-      padding: 12px;
-      border-radius: 10px;
+      padding: 14px 18px;
+      border-radius: 12px;
       background: #e0f2fe;
+      color: #075985;
+      font-size: 20px;
       font-weight: bold;
+    }
+
+    .math span {
+      background: #dcfce7;
+      color: #166534;
+    }
+
+    .one-on-one {
+      max-width: 850px;
+      margin: 35px auto 0;
+      text-align: left;
+    }
+
+    .one-on-one div,
+    .achievement div {
+      background: white;
+      margin: 12px 0;
+      padding: 16px 20px;
+      border-radius: 14px;
+      font-weight: bold;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+    }
+
+    .achievement {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .highlight {
+      background: white;
     }
 
     .contact {
       background: linear-gradient(135deg,#2563eb,#020617);
       color: white;
-      padding: 40px;
+      padding: 50px 20px;
+      text-align: center;
     }
 
     .wechat {
       background: white;
       color: black;
-      padding: 15px;
-      margin-top: 10px;
-      border-radius: 10px;
-      font-size: 22px;
+      padding: 16px 24px;
+      margin-top: 15px;
+      border-radius: 14px;
+      font-size: 26px;
       font-weight: bold;
       display: inline-block;
     }
 
     footer {
-      padding: 20px;
+      padding: 25px;
       text-align: center;
-      color: #888;
+      color: #64748b;
+      font-size: 14px;
     }
   </style>
 </head>
 
 <body>
 
-<div class="hero">
-  <h1>暑假数学统计核心课程小班辅导</h1>
-  <p>针对多伦多大学课程 · 2016–2026 十年经验</p>
+  <div class="hero">
+    <h1>暑假数学统计核心课程小班辅导</h1>
+    <p>针对多伦多大学课程 · 2016–2026 十年教学经验</p>
+    <p>系统复习 + 高频题型 + 押题强化</p>
 
-  <a href="#courses" class="btn btn1">查看课程</a>
-  <a href="#contact" class="btn btn2">咨询报名</a>
-</div>
-
-<div class="section">
-  <div class="card">★ 十年教学经验</div>
-  <div class="card">📘 针对 UofT 课程</div>
-  <div class="card">👥 小班 + 一对一</div>
-</div>
-
-<div id="courses" class="section">
-  <h2>课程列表</h2>
-
-  <h3>统计</h3>
-  <div class="courses">
-    <span>STA302F</span>
-    <span>STA304</span>
-    <span>STA237</span>
-    <span>STA457</span>
+    <a href="#courses" class="btn btn1">查看课程</a>
+    <a href="#contact" class="btn btn2">咨询报名</a>
   </div>
 
-  <h3>数学</h3>
-  <div class="courses">
-    <span>APM462</span>
-    <span>MAT235</span>
+  <div class="section">
+    <div class="card">★ 十年教学经验</div>
+    <div class="card">📘 针对 UofT 课程</div>
+    <div class="card">👥 小班 + 一对一</div>
   </div>
 
-  <p>其他课程支持一对一辅导</p>
-</div>
+  <div id="courses" class="section">
+    <h2>暑假小班课程</h2>
 
-<div id="contact" class="contact">
-  <h2>报名咨询</h2>
-  <p>适合预习 / 复习 / 冲刺高分</p>
+    <h3>统计课程</h3>
+    <div class="courses">
+      <span>STA302F</span>
+      <span>STA304</span>
+      <span>STA237</span>
+      <span>STA457</span>
+    </div>
 
-  <div class="wechat">
-    微信：liuchang6333
+    <h3>数学课程</h3>
+    <div class="courses math">
+      <span>APM462</span>
+      <span>MAT235</span>
+    </div>
+
+    <div class="one-on-one">
+      <h2 style="text-align:center;">🔥 一对一辅导课程</h2>
+      <div>MAT133 / MAT135 / MAT137 微积分系列</div>
+      <div>MAT223 / MAT224 线性代数系列</div>
+      <div>MAT244 / APM346 常微分方程 / 偏微分方程系列</div>
+      <div>MAT334 / MAT344</div>
+      <div>MAT246 / MAT301</div>
+    </div>
   </div>
-</div>
 
-<footer>
-  © 2016–2026 UofT Math & Stats Tutoring
-</footer>
+  <div class="section highlight">
+    <h2>🔥 近期好评 & 押题精准</h2>
+
+    <div class="achievement">
+      <div>2026W STA302 押题 80%以上</div>
+      <div>2026W STA305 押题 90%以上</div>
+      <div>2026W STA347 期末押题 100%</div>
+      <div>2026W APM346 TT2 100% 押中</div>
+      <div>MAT136 2026W：TT1 / TT2 / TT3 押中 70% / 90% / 90%</div>
+      <div>MAT223 2026 Winter 押中 70%以上题目</div>
+      <div>MAT344 2026 Winter 押中 90%以上题目</div>
+    </div>
+  </div>
+
+  <div id="contact" class="contact">
+    <h2>报名咨询</h2>
+    <p>适合预习 / 复习 / 冲刺高分</p>
+
+    <div class="wechat">
+      微信：liuchang6333
+    </div>
+  </div>
+
+  <footer>
+    © 2016–2026 UofT Math & Stats Tutoring
+  </footer>
 
 </body>
 </html>
